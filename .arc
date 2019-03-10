@@ -1,3 +1,8 @@
-touch .arc
-npm init --yes
-npm i @architect/architect
+@app
+corsfun
+
+@domain
+cors.brian.io
+
+@http
+get /
