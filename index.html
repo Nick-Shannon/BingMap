@@ -1,1 +1,21 @@
-<b>hi from github pages!</b>
+<!doctype html>
+<html>
+<head>
+  <!--fake out favicon so we dont get weird 404s-->
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+</head>
+
+<b>CORS!</b>
+<div id=stuff></div>
+
+<script type=module>
+async function main() { 
+  let url = 'https://cors.brian.io'
+  let req = await fetch(url)
+  let json = await req.json()
+  console.log(json)
+  stuff.innerHTML = `<pre>${JSON.stringify(json)}</pre>`
+}
+main()
+</script>
+</html>
